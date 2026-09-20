@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CTB (Clear To Build) Recovery by JURMIQ turns BOM, stock and live supplier data into build-readiness and material recovery decisions." />
+  <title>JURMIQ | CTB Recovery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav shell">
+      <a class="brand" href="#top" aria-label="JURMIQ home">JURMIQ</a>
+      <div class="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#proof">Validation</a>
+        <a href="#pilot">Pilot</a>
+      </div>
+      <a class="button button-small" href="mailto:pilots@jurmiq.com?subject=CTB%20Recovery%20Pilot">Request a pilot</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">CTB (CLEAR TO BUILD) RECOVERY</p>
+        <h1>Know what you can build.<br><span>Know what stops you.</span></h1>
+        <p class="lead">CTB Recovery combines BOM requirements, actual stock and live supplier data to calculate the real buildable quantity, expose exact blockers and identify the minimum recovery action.</p>
+        <div class="hero-actions">
+          <a class="button" href="mailto:pilots@jurmiq.com?subject=CTB%20Recovery%20Pilot&body=Hi%20Cristian%2C%0A%0AI%27d%20like%20to%20test%20CTB%20Recovery%20with%20a%20sanitized%20BOM%20and%20stock%20export.%0A">Pilot with your data</a>
+          <a class="button button-ghost" href="https://app.heygen.com/videos/61f30a1722854e19b91bf3b08d23347e" target="_blank" rel="noopener">Watch 90-sec demo</a>
+        </div>
+        <p class="micro">Designed for EMS, NPI, Materials, Planning and Manufacturing Engineering teams.</p>
+      </div>
+      <div class="hero-card" aria-label="CTB validation summary">
+        <p class="card-label">VALIDATION CASE</p>
+        <div class="metric"><span>Requested</span><strong>100</strong></div>
+        <div class="metric"><span>Buildable now</span><strong>42</strong></div>
+        <div class="metric"><span>After live recovery</span><strong>77</strong></div>
+        <div class="metric"><span>Optimized buy plan</span><strong>€317.54</strong></div>
+        <div class="saving">€276.66 less than the non-optimized purchase plan</div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="shell strip-grid">
+        <div><strong>BOM + ERP stock</strong><span>What is really available?</span></div>
+        <div><strong>Exact blockers</strong><span>Which PNs cap the build?</span></div>
+        <div><strong>Live sourcing</strong><span>Mouser + DigiKey</span></div>
+        <div><strong>Recovery target</strong><span>Buy only what unlocks production</span></div>
+      </div>
+    </section>
+
+    <section id="how" class="section shell">
+      <p class="eyebrow">HOW IT WORKS</p>
+      <h2>From raw files to a recovery decision.</h2>
+      <div class="steps">
+        <article><b>01</b><h3>Import</h3><p>Load BOMs, ERP/material-master stock and optional physical stock or part-master mappings.</p></article>
+        <article><b>02</b><h3>Calculate</h3><p>CTB calculates the maximum finished quantity supported by every material requirement.</p></article>
+        <article><b>03</b><h3>Expose blockers</h3><p>Shortages are mapped to exact manufacturer part numbers with manufacturer safeguards.</p></article>
+        <article><b>04</b><h3>Recover</h3><p>Live supplier results are evaluated against MOQ, price breaks and the true recovery target.</p></article>
+      </div>
+    </section>
+
+    <section id="proof" class="section section-alt">
+      <div class="shell proof-grid">
+        <div>
+          <p class="eyebrow">CURRENT VALIDATION</p>
+          <h2>42 → 77 units, without buying toward an unreachable 100.</h2>
+          <p>In the current validation case, six blockers were identified. Live supplier checks showed five sourceable blockers. One part still capped the build at 77 units.</p>
+          <p>Instead of buying every sourceable shortage toward the full 100-unit request, CTB optimized the plan only to the confirmed 77-unit recovery ceiling.</p>
+          <div class="callout"><strong>€594.20 → €317.54</strong><span>Same confirmed build result. €276.66 of unnecessary purchasing deferred.</span></div>
+          <p class="micro">Validation data shown is a test case, not a customer claim. Supplier inventory and pricing are point-in-time and must be rechecked before ordering.</p>
+        </div>
+        <figure class="product-shot">
+          <img src="assets/ctb-recovery-validation.png" alt="CTB Recovery validation screen showing live supplier recovery" />
+          <figcaption>CTB Recovery validation build with live supplier fusion.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section shell">
+      <p class="eyebrow">DESIGNED TO FAIL SAFELY</p>
+      <h2>Recovery data must be explicit, not optimistic.</h2>
+      <div class="safety-grid">
+        <div><strong>Exact MPN + manufacturer guard</strong><p>Shared MPN text across manufacturers is never silently accepted.</p></div>
+        <div><strong>Unresolved stays unresolved</strong><p>No-stock, not-found, ambiguous and API-error states remain visible.</p></div>
+        <div><strong>No fake alternatives</strong><p>Alternative parts require engineering approval; CTB does not silently substitute them.</p></div>
+      </div>
+    </section>
+
+    <section id="pilot" class="pilot">
+      <div class="shell pilot-inner">
+        <div>
+          <p class="eyebrow">PILOT PARTNERS WANTED</p>
+          <h2>Challenge CTB with your own sanitized data.</h2>
+          <p>We are looking for a small number of EMS/NPI/Materials teams willing to compare CTB Recovery with their current build-readiness process.</p>
+          <p class="pilot-note">No CadBas dependency. XLSX or CSV is enough for a pilot.</p>
+        </div>
+        <div class="pilot-box">
+          <h3>Minimum pilot input</h3>
+          <ul>
+            <li>BOM: internal PN + quantity per finished unit</li>
+            <li>Stock export: internal PN + available quantity</li>
+            <li>Optional: MPN + manufacturer mapping</li>
+          </ul>
+          <a class="button" href="mailto:pilots@jurmiq.com?subject=CTB%20Recovery%20Pilot">Email pilots@jurmiq.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div><strong>JURMIQ</strong><span>CTB Recovery — Build Readiness & Material Recovery</span></div>
+      <div><a href="mailto:cristian@jurmiq.com">cristian@jurmiq.com</a><span>© 2026 JURMIQ</span></div>
+    </div>
+  </footer>
+</body>
+</html>
