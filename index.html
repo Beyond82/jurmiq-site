@@ -72,10 +72,15 @@
           <div class="callout"><strong>€594.20 → €317.54</strong><span>Same confirmed build result. €276.66 of unnecessary purchasing deferred.</span></div>
           <p class="micro">Validation data shown is a test case, not a customer claim. Supplier inventory and pricing are point-in-time and must be rechecked before ordering.</p>
         </div>
-        <figure class="product-shot">
-          <img src="assets/ctb-recovery-validation.png" alt="CTB Recovery validation screen showing live supplier recovery" />
-          <figcaption>CTB Recovery validation build with live supplier fusion.</figcaption>
-        </figure>
+        <div class="proof-card" aria-label="Validated sourcing result">
+          <div class="proof-row"><span>Requested build</span><strong>100</strong></div>
+          <div class="proof-row"><span>Immediate build</span><strong>42</strong></div>
+          <div class="proof-row"><span>Exact blockers</span><strong>6</strong></div>
+          <div class="proof-row"><span>Live-sourceable blockers</span><strong>5 / 6</strong></div>
+          <div class="proof-row accent"><span>Confirmed build after recovery</span><strong>77</strong></div>
+          <div class="proof-row"><span>Unresolved blockers</span><strong>1</strong></div>
+          <div class="proof-note">Live supplier fusion: Mouser + DigiKey</div>
+        </div>
       </div>
     </section>
 
@@ -104,6 +109,11 @@
             <li>Stock export: internal PN + available quantity</li>
             <li>Optional: MPN + manufacturer mapping</li>
           </ul>
+          <div class="template-links">
+            <a href="pilot_templates/BOM_template.csv">BOM template</a>
+            <a href="pilot_templates/STOCK_template.csv">Stock template</a>
+            <a href="pilot_templates/PART_MASTER_optional.csv">Part Master template</a>
+          </div>
           <a class="button" href="mailto:pilots@jurmiq.com?subject=CTB%20Recovery%20Pilot">Email pilots@jurmiq.com</a>
         </div>
       </div>
